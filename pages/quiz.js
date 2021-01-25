@@ -26,15 +26,15 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={db.bgQuiz}>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h1>{db.titleQuiz}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <p>{db.descriptionQuiz}</p>
           </Widget.Content>
         </Widget>
 
@@ -42,12 +42,12 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Primeira aula - estrutura base</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/mafeal" />
     </QuizBackground>
   );
 }
