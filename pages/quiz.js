@@ -42,12 +42,12 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>Primeira aula - estrutura base</p>
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/mafeal" />
+      <GitHubCorner projectUrl="https://github.com/mafeal/aluraquizz.git" />
     </QuizBackground>
   );
 }
