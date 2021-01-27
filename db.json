@@ -1,7 +1,7 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67",
+    "title": "Quiz React-NextJS",
+    "description": "Teste os conhecimentos adquiridos na Imersão Alura React-NextJS",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -36,12 +36,13 @@
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "disabled": "#979797"
       },
       "borderRadius": "4px"
     },
-    "bgQuiz": "https://res.cloudinary.com/practicaldev/image/fetch/s---1--mXxH--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/clquq8a2po291k7nlpkg.png",
     "titleQuiz": "Quiz Imersão Next.JS",
-    "descriptionQuiz": "Teste o que aprendeu durante as aulas da imersão e aproveite tirar suas dúvidas."
+    "descriptionQuiz": "Esse quiz é composto por 5 perguntas, com 4 alternativas cada, sobre o conteúdo da Imersão Alura React-Next.JS. Mostre para seus amigos o quanto você aprendeu."
+    
 
   }
