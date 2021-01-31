@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="\img_site.JPG"
+          content="/img_site_ret.JPG"
         />
         <meta
           property="og:image:width"
