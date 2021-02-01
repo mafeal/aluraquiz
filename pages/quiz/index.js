@@ -1,24 +1,32 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 import db from '../../db.json';
 import Form from '../../src/components/AlternativesForms';
 import Widget from '../../src/components/Widget';
 import QuizLogo from '../../src/components/QuizLogo';
 import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 import Button from '../../src/components/Button';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
+  // console.log(name);
+
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         Tela de Resultados
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
+          {`Muito bem, ${name}, você acertou`}
           {' '}
           {results.reduce((somatorioAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -32,7 +40,7 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li KEY={`result__${index}`}>
+            <li key={`result__${index}`}>
               #0
               {index + 1}
               {' '}
@@ -55,7 +63,10 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <img
+          alt="Spinner"
+          src="./animation_200_kkljj5ef.gif"
+        />
       </Widget.Content>
     </Widget>
   );
@@ -77,7 +88,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 
@@ -136,8 +147,7 @@ function QuestionWidget({
             Confirmar
           </Button>
           <p>
-            selectedAlternative
-            {selectedAlternative}
+            {`Alternativa Selecionada: ${selectedAlternative + 1}`}
           </p>
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
@@ -175,7 +185,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 3 * 1000);
   // nasce === didMount
   }, []);
 

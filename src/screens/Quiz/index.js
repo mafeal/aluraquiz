@@ -1,6 +1,7 @@
 /* Página clonada do quiz para exibir conteúdo externo */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 // import db from '../../db.json';
 import Form from '../../components/AlternativesForms';
 import Widget from '../../components/Widget';
@@ -11,6 +12,9 @@ import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
+
   return (
     <Widget>
       <Widget.Header>
@@ -19,7 +23,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          {`Muito bem, ${name}, você acertou`}
           {' '}
           {results.reduce((somatorioAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -56,7 +60,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        Só um momento...
       </Widget.Content>
     </Widget>
   );
@@ -137,8 +141,7 @@ function QuestionWidget({
             Confirmar
           </Button>
           <p>
-            selectedAlternative
-            {selectedAlternative}
+            {`Alternativa Selecionada: ${selectedAlternative + 1}`}
           </p>
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}

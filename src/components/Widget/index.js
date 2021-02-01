@@ -63,6 +63,11 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+
+  &[data-hasname="DISABLED"] {
+    background-color: ${({ theme }) => theme.colors.disabled};
+    cursor: not-allowed;
+  }
 `;
 
 export default Widget;

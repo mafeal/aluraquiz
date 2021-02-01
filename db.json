@@ -1,45 +1,66 @@
 {
   "bg": "https://downloadcursos.top/wp-content/uploads/2020/08/imersao-react.jpg",
-  "title": "Quiz JavaScript #AluraQuiz",
-  "description": "Um quiz rápido sobre o mundo do JavaScript",
+  "title": "Quiz Imersão React-Next.JS #AluraQuiz",
+  "description": "Um quiz rápido sobre o mundo do React.JS",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
-      "title": "Qual a diferença entre = , == e === ?",
-      "description": "Pergunta fácil em!",
+      "image": "https://media2.giphy.com/media/iFmw13LV1hHhViPPWz/source.gif",
+      "title": "O REACT é classificado 'oficialmente' como:",
+      "description": "Essa é só prá esquentar!",
       "answer": 1,
       "alternatives": [
-        "São a mesma coisa",
-        "O = significa atribuição de valor. Já == verifica a igualdade do valor, enquanto === verifica valor e tipo de variável."
+        "Linguagem de programação baseada em C#.",
+        "Uma biblioteca JavaScript para criar interfaces de usuário.",
+        "Um Framework que substitui o JavaScript nas aplicações web.",
+        "Uma seita religiosa."
       ]
     },
     {
-      "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
-      "title": "Que tipos de dados são suportados em JavaScript?",
+      "image": "https://uploads.toptal.io/blog/image/92137/toptal-blog-image-1455717817638-f1c9424752a145ebf97219ec7a2d6cca.gif",
+      "title": "Para que o Node interprete corretamente os métodos do React, ele deve ser importado em cada um dos módulos. A maneira correta de fazê-lo é:",
       "description": "E agora? Você sabe?",
+      "answer": 3,
+      "alternatives": [
+        "import React from '../src/framework/react'.",
+        "import default React from 'react'.",
+        "set import { React } from 'react'.",
+        "import React from 'react'."
+      ]
+    },
+    {
+      "image": "data:image/jpeg;base64,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",
+      "title": "No projeto desenvolvido na imersão, as rotas estão sendo criadas e gerenciadas:",
+      "description": "Tá ficando mais difícil?",
+      "answer": 1,
+      "alternatives": [
+        "pelo pacote React-Router, criando um modulo de rotas Router.js.",
+        "pelo Next que as gera baseando-se nos módulos salvos em ./pages.",
+        "usando a biblioteca Prop-Types, definindo o tipo das rotas e as passando pelo ...props.",
+        "automaticamente pelo browser, com exceção do Internet Explorer"
+      ]
+    },
+    {
+      "image": "https://reactiveprogramming.io/figures/react/ciclo-de-vida-obsoleto.png",
+      "title": "Sobre os métodos do ciclo de vida dos componentes React, podemos dizer:",
+      "description": "E agora? Será que sabe tudo mesmo?",
+      "answer": 2,
+      "alternatives": [
+        "São métodos que monitoram alterações de algum componente, renderizando-o novamente",
+        "São fases do projeto da aplicação que são acompanhados em um cronograma",
+        "São executados conforme as fases do componente, quando é criado, atualizado ou removido do DOM",
+        "São três: infância, adolescência e senioridade."
+      ]
+    },
+    {
+      "image": "https://raw.githubusercontent.com/boltmedia/serverless-next.js/HEAD/logo.gif",
+      "title": "Podemos citar como vantagem de se usar o Next.JS:",
+      "description": "Vamos lá, só falta essa!",
       "answer": 0,
       "alternatives": [
-        "Number, String, Undefined, Null e Bool.",
-        "Int, String, Undefined, Null e Bool."
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a diferença de window e global?",
-      "answer": 1,
-      "alternatives": [
-        "São a mesma coisa",
-        "window é o escopo global no browser, e global no node"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-      "answer": 1,
-      "alternatives": [
-        "JSONHttpRequest",
-        "XMLHttpRequest",
-        "fetch"
+        "Gera uma página estática HTML, renderizada no lado do cliente com pouquíssima configuração.",
+        "Não permite o uso de TypeScript.",
+        "Usa o AngularJS como base de sua build de desenvolvimento.",
+        "Substitui o ReactJS e o JavaScript no mercado."
       ]
     }
   ],
